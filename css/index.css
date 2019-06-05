@@ -1,1 +1,82 @@
-/* Compile your LESS file! */
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+h4 {
+  font-size: 1.3rem;
+}
+.intro-description {
+  font-size: 0.75rem;
+}
+.container {
+  width: 880px;
+  margin: auto;
+}
+header {
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: row;
+    width: 100%;
+    padding: 20px;
+  }
+}
+header nav {
+  margin-top: 40px;
+  width: 610px;
+  justify-content: space-between;
+  align-content: center;
+  display: flex;
+}
+header nav a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+header nav a a:hover {
+  text-decoration: underline;
+  color: black;
+}
+intro {
+  display: flex;
+  margin-top: 72px;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  intro {
+    width: 100%;
+    padding: 20px;
+  }
+}
+intro .intro-text {
+  font-size: 72px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+intro .intro-text button {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 170px;
+  height: 32px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+intro .intro-text img {
+  margin: 0 auto;
+}
